@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Custom Cursor
+    // Custom Cursor logic
     const cursorDot = document.querySelector('[data-cursor-dot]');
     const cursorOutline = document.querySelector('[data-cursor-outline]');
     const interactables = document.querySelectorAll('a, button, .gallery-item, .image-frame');
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll Reveal
+    // Scroll Reveal Animation
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
